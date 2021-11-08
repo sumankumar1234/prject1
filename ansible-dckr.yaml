@@ -28,12 +28,12 @@
 
     - name: Pull default Docker image
       docker_image:
-        name: ubuntu131:18.04
+        name: sumankumar1234/project1:project11
         source: pull
 
     - name: Create default containers
       docker_container:
         name: docker_ubuntu
-        image: ubuntu:18.04
+        image: sumankumar1234/project1:project11
         command: sleep 1d
         state: present
